@@ -67,7 +67,16 @@ development dependency for the tests. Both are declared in
 
 ## Installation
 
-From the directory containing this README:
+For everyday use, install the command with
+[pipx](https://pipx.pypa.io/) (isolated environment, no repository clone
+needed):
+
+```sh
+pipx install "git+https://github.com/abdounesalim450/weather-cli.git#subdirectory=weather-cli"
+weather-cli Algiers
+```
+
+For development, from the directory containing this README:
 
 ```sh
 cd weather-cli

@@ -1,9 +1,25 @@
 [project]
 name = "weather-cli"
 version = "0.1.0"
-description = "Print current temperature and wind speed for a city using Open-Meteo"
+description = "Print current temperature and wind speed for a city using Open-Meteo (no API key required)"
+readme = "README.md"
+license = { text = "MIT" }
 requires-python = ">=3.10"
+authors = [{ name = "abdounesalim450" }]
+keywords = ["weather", "cli", "command-line", "terminal", "open-meteo", "forecast"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+]
 dependencies = ["requests"]
+
+[project.urls]
+Homepage = "https://github.com/abdounesalim450/weather-cli"
+Repository = "https://github.com/abdounesalim450/weather-cli"
+Issues = "https://github.com/abdounesalim450/weather-cli/issues"
 
 [dependency-groups]
 dev = ["pytest"]

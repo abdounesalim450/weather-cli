@@ -1,0 +1,22 @@
+[project]
+name = "weather-cli"
+version = "0.1.0"
+description = "Print current temperature and wind speed for a city using Open-Meteo"
+requires-python = ">=3.10"
+dependencies = ["requests"]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[project.scripts]
+weather-cli = "weather_cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+py-modules = ["weather_cli"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
